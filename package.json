@@ -1,7 +1,7 @@
 {
   "name": "ugc-video-maker",
   "version": "1.0.0",
-  "description": "UGC AI Video Maker with Seedance 2.0",
+  "description": "UGC AI Video Maker with Google AI Studio",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

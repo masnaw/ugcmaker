@@ -44,7 +44,7 @@
       const fullHd = resolution.querySelector('option[value="1080p"]');
       if (!fullHd) return;
 
-      if (model.value === 'seedance-2.0-fast') {
+      if (model.value === 'gemini-1.5-flash') {
         fullHd.disabled = true;
         if (resolution.value === '1080p') {
           resolution.value = '720p';

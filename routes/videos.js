@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { createVideo, updateVideoStatus, getVideoById, getAllVideos, deleteVideo, getSettings, getAllAssets } = require('../database');
-const { createVideoTask, pollTaskStatus } = require('../services/seedance');
+const { createVideoTask, pollTaskStatus } = require('../services/google_ai');
 const { downloadVideo, saveThumbnail } = require('../services/localMedia');
 
 const publicVideo = (video) => {

@@ -27,7 +27,7 @@
       format: formats[index % formats.length],
       duration: index % 3 === 0 ? '10s' : '5s',
       ratio: index % 4 === 0 ? '1:1' : '9:16',
-      model: index % 2 === 0 ? 'seedance-2.0-fast' : 'seedance-2.0',
+      model: index % 2 === 0 ? 'gemini-1.5-flash' : 'veo-2.0',
       status: index < 15 ? 'queued' : 'completed',
       prompt: 'Buat video UGC affiliate untuk ' + product[0] + ' dengan hook cepat, demo produk jelas, visual natural, dan CTA soft untuk social commerce.'
     };

@@ -15,10 +15,10 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS settings (
     id INTEGER PRIMARY KEY CHECK (id = 1),
     api_key TEXT DEFAULT '',
-    api_base_url TEXT DEFAULT 'https://ark.ap-southeast.bytepluses.com/api/v3',
+    api_base_url TEXT DEFAULT 'https://generativelanguage.googleapis.com/v1beta',
     default_resolution TEXT DEFAULT '1080p',
     default_ratio TEXT DEFAULT '9:16',
-    default_model TEXT DEFAULT 'seedance-2.0',
+    default_model TEXT DEFAULT 'veo-2.0',
     default_duration TEXT DEFAULT '5s'
   );
 
@@ -38,7 +38,7 @@ db.exec(`
     prompt TEXT NOT NULL,
     resolution TEXT NOT NULL DEFAULT '1080p',
     ratio TEXT NOT NULL DEFAULT '9:16',
-    ai_model TEXT NOT NULL DEFAULT 'seedance-2.0',
+    ai_model TEXT NOT NULL DEFAULT 'veo-2.0',
     duration TEXT NOT NULL DEFAULT '5s',
     status TEXT NOT NULL DEFAULT 'pending' CHECK (status IN ('pending', 'generating', 'completed', 'failed')),
     job_id TEXT,
@@ -135,7 +135,7 @@ const createVideo = (data) => {
     data.prompt,
     data.resolution || '1080p',
     data.ratio || '9:16',
-    data.ai_model || 'seedance-2.0',
+    data.ai_model || 'veo-2.0',
     data.duration || '5s',
     data.status || 'pending',
     data.job_id || null,
