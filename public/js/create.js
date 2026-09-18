@@ -701,7 +701,7 @@
       var resSelect = $('#resolution-select');
       var activeOption = options ? options.querySelector('.model-option[data-value="' + val + '"]') : null;
 
-      if (val === 'seedance-2.0-fast') {
+      if (val === 'gemini-1.5-flash') {
         if ($('#model-display-name')) $('#model-display-name').textContent = activeOption ? activeOption.dataset.name : 'Seedance 2.0 Fast';
         if ($('#model-display-desc')) $('#model-display-desc').textContent = activeOption ? activeOption.dataset.desc : 'Fast draft mode';
         if (resSelect) {
@@ -1543,7 +1543,7 @@
   function getSelectedModel() {
     var select = $('#ai-model-select');
     if (select) return select.value;
-    return 'seedance-2.0';
+    return 'veo-2.0';
   }
 
   function renderPromptSummary(prompt) {

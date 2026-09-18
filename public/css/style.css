@@ -1613,7 +1613,7 @@ input.form-input::placeholder {
 }
 
 /* Seedance UGC studio */
-.seedance-studio.page-create {
+.google-ai-studio.page-create {
   grid-template-columns: 440px minmax(460px, 1fr) 260px;
 }
 
@@ -2148,7 +2148,7 @@ input.form-input::placeholder {
   font-size: 11px;
 }
 
-.seedance-studio .preview-empty {
+.google-ai-studio .preview-empty {
   min-height: 220px;
   height: auto;
   background: var(--bg);
@@ -2162,11 +2162,11 @@ input.form-input::placeholder {
 }
 
 @media (max-width: 1180px) {
-  .seedance-studio.page-create {
+  .google-ai-studio.page-create {
     grid-template-columns: 440px minmax(360px, 1fr);
   }
 
-  .seedance-studio .panel-history {
+  .google-ai-studio .panel-history {
     display: none;
   }
 }
@@ -2178,7 +2178,7 @@ input.form-input::placeholder {
     overflow: visible;
   }
 
-  .seedance-studio.page-create {
+  .google-ai-studio.page-create {
     display: block;
     height: auto;
   }
